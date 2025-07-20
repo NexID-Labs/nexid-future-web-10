@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -6,52 +7,100 @@ import { Button } from "./ui/button";
 const Portfolio = () => {
   const projects = [
     {
-      title: "AI LandingSite.ai Platform",
-      description: "Revolutionary AI-powered landing page generator with automated content optimization and real-time performance analytics.",
-      image: "https://images.unsplash.com/photo-1551038247-3d9af20df552?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      category: "AI Platform",
-      technologies: ["React", "Next.js", "GPT-4", "TensorFlow", "WebGL"],
-      status: "Live"
+      "title": "Interactive Education Platform",
+      "description": "A dynamic web platform designed for interactive online courses, featuring live Q&A, progress tracking, and personalized learning paths.",
+      "image": "https://images.unsplash.com/photo-1549298493-272e25d2b3b7?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "Web Dev",
+      "technologies": ["React", "Node.js", "Express.js", "PostgreSQL", "Socket.io"],
+      "status": "Live"
     },
     {
-      title: "3D Interactive Trading Dashboard",
-      description: "Immersive 3D trading interface with real-time market visualization and advanced portfolio management tools.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      category: "Fintech",
-      technologies: ["Three.js", "WebGL", "React", "D3.js", "Socket.io"],
-      status: "In Development"
+      "title": "Personal Finance Dashboard Web App",
+      "description": "A secure web application for tracking personal finances, budgeting, and visualizing spending habits with interactive charts.",
+      "image": "https://images.unsplash.com/photo-1506784849646-7c8a6c8e3b3b?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "Web Dev",
+      "technologies": ["Vue.js", "Django", "D3.js", "MongoDB", "OAuth2"],
+      "status": "Completed"
     },
     {
-      title: "Smart Asset Management Suite",
-      description: "Comprehensive SaaS platform for digital asset management with AI-driven insights and automated reporting.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      category: "SaaS",
-      technologies: ["Vue.js", "Python", "Machine Learning", "PostgreSQL"],
-      status: "Completed"
+      "title": "Local Artisan Marketplace",
+      "description": "An e-commerce platform connecting local artisans with buyers, offering customizable storefronts and secure payment processing.",
+      "image": "https://images.unsplash.com/photo-1542435503-956c469947f6?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "Web Dev",
+      "technologies": ["Angular", "Spring Boot", "MySQL", "Stripe API", "AWS S3"],
+      "status": "In Development"
     },
     {
-      title: "Interactive Product Showcase",
-      description: "3D product visualization platform with AR capabilities and interactive configuration tools for e-commerce.",
-      image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      category: "E-commerce",
-      technologies: ["Three.js", "AR.js", "React", "WebXR", "Blender API"],
-      status: "Live"
+      "title": "Smart Home Hub Mobile App",
+      "description": "A mobile application for controlling and monitoring smart home devices, including lighting, thermostats, and security cameras.",
+      "image": "https://images.unsplash.com/photo-1590487985473-b6c8d76d6c6e?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "App Dev",
+      "technologies": ["React Native", "Firebase", "Bluetooth LE", "IoT Core"],
+      "status": "Live"
     },
     {
-      title: "Fintech Analytics Dashboard",
-      description: "Real-time financial data visualization with predictive analytics and risk assessment tools.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      category: "Analytics",
-      technologies: ["React", "D3.js", "Python", "FastAPI", "Redis"],
-      status: "Completed"
+      "title": "Personalized Fitness Coaching App",
+      "description": "A mobile app offering AI-driven personalized workout plans, nutrition tracking, and progress visualization.",
+      "image": "https://images.unsplash.com/photo-1550547640-1ed40f5d0f1b?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "App Dev",
+      "technologies": ["Flutter", "TensorFlow Lite", "REST API", "PostgreSQL"],
+      "status": "Completed"
     },
     {
-      title: "AI-Powered Content Platform",
-      description: "Intelligent content management system with automated SEO optimization and personalized user experiences.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&crop=entropy&auto=format",
-      category: "CMS",
-      technologies: ["React", "Node.js", "OpenAI", "MongoDB", "Elasticsearch"],
-      status: "Live"
+      "title": "Community Skill-Share Mobile App",
+      "description": "A platform connecting users for peer-to-peer skill sharing, workshops, and collaborative learning experiences.",
+      "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ee43?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "App Dev",
+      "technologies": ["Swift", "Kotlin", "AWS Amplify", "GraphQL"],
+      "status": "In Development"
+    },
+    {
+      "title": "PropertyPro Management Suite",
+      "description": "A comprehensive SaaS platform for property managers to handle leases, tenants, maintenance requests, and financial reporting.",
+      "image": "https://images.unsplash.com/photo-1570710891163-6d3b5c47496b?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "SaaS",
+      "technologies": ["Ruby on Rails", "React", "AWS Lambda", "Stripe", "PostgreSQL"],
+      "status": "Live"
+    },
+    {
+      "title": "SocialPulse Content Scheduler",
+      "description": "An AI-enhanced SaaS for scheduling social media posts, analyzing engagement, and identifying optimal posting times.",
+      "image": "https://images.unsplash.com/photo-1557426172-0cf952078ce5?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "SaaS",
+      "technologies": ["Node.js", "Vue.js", "GPT-3", "MongoDB Atlas", "AWS SQS"],
+      "status": "In Development"
+    },
+    {
+      "title": "FreelanceFlow Financial Hub",
+      "description": "A cloud-based SaaS for freelancers to manage invoices, track expenses, and automate tax calculations.",
+      "image": "https://images.unsplash.com/photo-1591696205602-2f950c417947?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "SaaS",
+      "technologies": ["Python", "Flask", "React", "PostgreSQL", "QuickBooks API"],
+      "status": "Completed"
+    },
+    {
+      "title": "LeadGenius AI Sales Chatbot",
+      "description": "An intelligent chatbot designed to qualify sales leads on websites, gather prospect information, and schedule demos automatically.",
+      "image": "https://images.unsplash.com/photo-1550392815-f5c7e0c4f8e5?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "AI Chatbot",
+      "technologies": ["Python", "Dialogflow", "GPT-4", "Node.js", "CRM Integration"],
+      "status": "Live"
+    },
+    {
+      "title": "E-commerce Product Advisor Bot",
+      "description": "A chatbot for online stores providing personalized product recommendations and customer support based on user preferences and browsing history.",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "AI Chatbot",
+      "technologies": ["Python", "Natural Language Processing (NLP)", "Reinforcement Learning", "React"],
+      "status": "In Development"
+    },
+    {
+      "title": "FinBot Personal Finance Assistant",
+      "description": "An AI chatbot that helps users track expenses, create budgets, analyze spending patterns, and get financial insights.",
+      "image": "https://images.unsplash.com/photo-1563986768605-da4d148e718d?w=600&h=400&fit=crop&crop=entropy&auto=format",
+      "category": "AI Chatbot",
+      "technologies": ["Python", "NLTK", "TensorFlow", "PostgreSQL", "Mobile Integration"],
+      "status": "Completed"
     }
   ];
 
