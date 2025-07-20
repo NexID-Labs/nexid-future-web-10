@@ -15,7 +15,7 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Simple validation
@@ -24,17 +24,34 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
-    toast.success("Thank you! We'll get back to you within 24 hours.");
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      project: "",
-      message: ""
-    });
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mvgqzwwn', {
+        method: 'POST',
+        body: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        toast.success("Thank you! We'll get back to you within 24 hours.");
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          project: "",
+          message: ""
+        });
+      } else {
+        toast.error("Oops! Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      toast.error("Network error. Please check your connection and try again.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
