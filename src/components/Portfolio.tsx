@@ -367,15 +367,7 @@ const Portfolio = () => {
                   )}
                 </div>
 
-                <div className="flex gap-2">
-                  <Button size="sm" className="btn-ghost flex-1">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Live
-                  </Button>
-                  <Button size="sm" variant="outline" className="border-primary/30 text-primary">
-                    <Github className="w-4 h-4" />
-                  </Button>
-                </div>
+                
               </CardContent>
             </Card>
           ))}

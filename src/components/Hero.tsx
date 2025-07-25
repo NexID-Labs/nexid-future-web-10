@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="absolute bottom-40 left-20 w-3 h-3 bg-accent rounded-full float animation-delay-4000"></div>
       <div className="absolute bottom-20 right-10 w-5 h-5 bg-primary-light rounded-full float animation-delay-1000"></div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div className="container mx-auto px-6 text-center relative z-10 pt-20">
         <div className={`${mounted ? 'slide-up' : 'opacity-0'}`}>
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 border border-primary/20">
